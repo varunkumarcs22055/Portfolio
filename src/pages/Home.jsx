@@ -198,7 +198,7 @@ const Home = () => {
                             style={{ x: titleLeftX }}
                         >
                             <h2 className="hero-title-classic">
-                                TIMELESS
+                                SOFTWARE
                             </h2>
                         </motion.div>
 
@@ -242,7 +242,7 @@ const Home = () => {
                             style={{ x: titleRightX }}
                         >
                             <h2 className="hero-title-classic">
-                                CREATIONS
+                                ENGINEER
                             </h2>
                         </motion.div>
                     </div>
@@ -250,7 +250,7 @@ const Home = () => {
                     {/* Subtitle */}
                     <div className="hero-subtitle text-center mt-12">
                         <p className="font-heading text-lg md:text-xl text-ivory/70 tracking-[0.15em] italic">
-                            A Showcase of Enduring Design
+                            Building Scalable Solutions with AI & Innovation
                         </p>
                         <div className="flex items-center justify-center gap-4 mt-4">
                             <motion.div

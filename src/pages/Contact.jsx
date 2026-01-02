@@ -24,11 +24,18 @@ const Contact = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate form submission
-        await new Promise(resolve => setTimeout(resolve, 1500));
+        // Create mailto link with form data
+        const mailtoLink = `mailto:varunkumarthakur021@gmail.com?subject=${encodeURIComponent(formData.subject || 'Portfolio Contact')}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
+
+        // Open email client
+        window.location.href = mailtoLink;
+
+        // Show success after brief delay
+        await new Promise(resolve => setTimeout(resolve, 1000));
 
         setIsSubmitting(false);
         setSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
     };
 
     const socialLinks = [
